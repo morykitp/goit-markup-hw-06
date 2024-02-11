@@ -29,11 +29,11 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:#2e2f42; 
+    color: #4d5ae5;
 }
 
-.logo-color-blue {
-    color:#4d5ae5;
+.logo-extra-color {
+    color: #2e2f42;
 }
 
 .menu-link {
@@ -46,6 +46,10 @@ body {
 
 .menu-link:hover, .menu-link:focus {
     color: #404bbf;
+}
+
+.contact-info {
+    font-style: normal;
 }
 
 .ccontact-elements-link {
@@ -83,6 +87,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    background-color: #4D5AE5;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -115,7 +120,7 @@ body {
 /* =============== Team section styles =============== */
 
 .team-list {
-    background-color: #f4f4fd;
+    background-color: #FFFFFF
 }
 
 .team-list-title {
@@ -195,14 +200,14 @@ body {
     color: #f4f4fd;
 }
 
-.logo-footer-color-blue {
-    color: #4d5ae5;
+.footer-logo-extra-color {
+    color: #f4f4fd;
 }
 
 .footer-info {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: #4d5ae5;
 }
 /* =============== /Page footer styles =============== */
