@@ -52,14 +52,26 @@ body {
     font-style: normal;
 }
 
-.ccontact-elements-link {
+.contact-element-email {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.contact-elements-link:hover, .contact-elements-link:focus {
+.contact-element-email:hover,
+.contact-element-email:focus {
+    color: #404bbf;
+}
+
+.contact-element-phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-element-phone:hover, .contact-element-phone:focus {
     color: #404bbf;
 }
 
@@ -123,10 +135,6 @@ body {
     background-color: #F4F4FD;
 }
 
-.team-list-block {
-    background-color: #FFFFFF;
-}
-
 .team-list-title {
     font-weight: 700;
     font-size: 36px;
@@ -144,6 +152,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    background-color: #FFFFFF;
 }
 
 .team-list-item-info {
