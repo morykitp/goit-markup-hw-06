@@ -44,7 +44,8 @@ body {
     color: #2e2f42;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #404bbf;
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 .contact-element-link:hover,
-.contact-element-linl:focus {
+.contact-element-link:focus {
     color: #404bbf;
 }
 
@@ -123,6 +124,10 @@ body {
     background-color: #F4F4FD;
 }
 
+.team-list-item {
+    background-color: #FFFFFF;
+}
+
 .team-list-title {
     font-weight: 700;
     font-size: 36px;
@@ -148,7 +153,6 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    background-color: #FFFFFF;
 }
 
 /* =============== /Team section styles =============== */
