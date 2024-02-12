@@ -59,10 +59,12 @@ body {
     letter-spacing: 0.02em;
 }
 
-.contact-element-link:hover,
-.contact-element-link:focus {
+.contact-elements-link:hover,
+.contact-elements-link:focus {
     color: #404bbf;
 }
+
+
 
 /* =============== /Page header styles =============== */
 
@@ -124,10 +126,6 @@ body {
     background-color: #F4F4FD;
 }
 
-.team-list-item {
-    background-color: #FFFFFF;
-}
-
 .team-list-title {
     font-weight: 700;
     font-size: 36px;
@@ -136,6 +134,7 @@ body {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    background-color: #FFFFFF;
 }
 
 .team-list-item-name {
@@ -145,6 +144,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    background-color: #FFFFFF;
 }
 
 .team-list-item-info {
@@ -153,6 +153,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    background-color: #FFFFFF;
 }
 
 /* =============== /Team section styles =============== */
