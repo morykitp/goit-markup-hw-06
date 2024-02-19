@@ -57,10 +57,6 @@ body {
     gap: 40px;
 }
 
-.menu-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
 .menu>:last-child {
     margin-right: 0
@@ -78,6 +74,8 @@ body {
 .page-heder-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo {
