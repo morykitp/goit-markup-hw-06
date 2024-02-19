@@ -45,6 +45,8 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .page-nav {
@@ -55,8 +57,6 @@ body {
 .menu {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .menu>:last-child {
@@ -66,8 +66,6 @@ body {
 .contact-menu {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .contact-menu>:last-child {
