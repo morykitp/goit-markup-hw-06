@@ -56,7 +56,7 @@ body {
     display: flex;
     gap: 40px;
     padding-top: 24px;
-    padding-bottom: 24px
+    padding-bottom: 24px;
 }
 
 .menu>:last-child {
@@ -205,15 +205,9 @@ margin-right: 0
     display: flex;
 }
 
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;;
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 
 .benefits-item-name {
@@ -255,10 +249,7 @@ margin-right: 0
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     width: calc((100% -72px)/ 4);
     background-color: #FFFFFF;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-image {
@@ -312,8 +303,14 @@ margin-right: 0
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    width: calc((100%-48px) / 3);
     row-gap: 48px;
+}
+
+.portfolio-info-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-item-image {
@@ -325,6 +322,7 @@ margin-right: 0
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     background: #fff;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-title {
