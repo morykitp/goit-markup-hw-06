@@ -45,8 +45,6 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .page-nav {
@@ -86,6 +84,8 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-extra-color {
