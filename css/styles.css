@@ -74,6 +74,9 @@ body {
 .page-heder-container {
     display: flex;
     justify-content: space-between;
+}
+
+.menu-link {
     padding-top: 24px;
     padding-bottom: 24px;
 }
