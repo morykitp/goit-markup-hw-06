@@ -50,6 +50,8 @@ body {
 .page-nav {
     display: flex;
     align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .menu {
@@ -69,6 +71,11 @@ body {
 
 .contact-menu>:last-child {
     margin-right: 0
+}
+
+.contact-info {
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .page-heder-container {
@@ -104,7 +111,6 @@ body {
     color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px;
-    }
 }
 
 .menu-link:hover,
@@ -269,10 +275,6 @@ margin-right: 0
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item-image {
-    margin-bottom: 32px;
-}
-
 .team-list-title {
     font-weight: 700;
     font-size: 36px;
@@ -302,7 +304,6 @@ margin-right: 0
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin-bottom: 32px;
 }
 
 /* =============== /Team section styles =============== */
@@ -330,14 +331,7 @@ margin-right: 0
     margin-bottom: 8px;
 }
 
-.portfolio-list-item-image {
-    padding-bottom: 32px;
-}
-
 .portfolio-list-item {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
     background: #fff;
     width: calc((100% - 48px) / 3);
 }
@@ -371,7 +365,6 @@ margin-right: 0
     letter-spacing: 0.02em;
     color: #434455;
     margin-left: 16px;
-    margin-bottom: 32px;
 }
 
 /* =============== /Portfolio section styles =============== */
