@@ -43,6 +43,9 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-nav {
@@ -138,7 +141,6 @@ menu-link:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-elements-link:hover,
@@ -146,7 +148,9 @@ menu-link:focus {
     color: #404bbf;
 }
 
-
+.contact-element-item: {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* =============== /Page header styles =============== */
 
@@ -165,6 +169,8 @@ menu-link:focus {
         rgba(46, 47, 66, 0.7)
         ), url(../images/hero/people-office.jpg);
     background-color: #2e2f42;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-container {
@@ -204,6 +210,7 @@ menu-link:focus {
     border-radius: 4px;
     background-color: #4D5AE5;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover, 
@@ -236,6 +243,9 @@ menu-link:focus {
     border-radius: 4px;
     margin-bottom: 8px;
     fill: none;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 }
 
 .benefits-container-list {
@@ -286,6 +296,7 @@ menu-link:focus {
 .social-list {
     display: flex; 
     gap: 24px;
+    justify-content: center;
 }
 
 .social-list-link {
@@ -299,7 +310,13 @@ menu-link:focus {
     border-radius: 50%;
 }
 
-.social-list-link:hover {
+.social-list-item {
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus
+ {
     fill: #f4f4fd;
     background-color: #404bbf;
 }
@@ -316,10 +333,11 @@ menu-link:focus {
 }
 
 .information-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 0;
     padding-left: 16px;
     padding-right: 16px;
+
+    
 }
 
 .team-list-item {
@@ -484,7 +502,12 @@ menu-link:focus {
     border-radius: 50%;
 }
 
-.footer-social-list-link:hover {
+.footer-social-list-item {
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-link:hover,
+footer-social-list-link:focus {
     fill: #f4f4fd;
     background-color: #31d0aa;
 }
