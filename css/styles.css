@@ -51,6 +51,7 @@ body {
 .page-nav {
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu {
@@ -62,6 +63,10 @@ body {
     margin-right: 0;
 }
 
+.menu-item {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contact-menu {
     display: flex;
     gap: 40px;
@@ -69,16 +74,19 @@ body {
 
 .contact-menu>:last-child {
     margin-right: 0
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-info {
     margin-top: 24px;
     margin-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-heder-container {
     display: flex;
     justify-content: space-between;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -90,6 +98,7 @@ body {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-extra-color {
@@ -147,6 +156,10 @@ menu-link:focus {
 .contact-elements-link:hover,
 .contact-elements-link:focus {
     color: #404bbf;
+}
+
+.content-element-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -295,6 +308,8 @@ menu-link:focus {
     display: flex; 
     gap: 24px;
     justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .social-list-link {
@@ -320,6 +335,8 @@ menu-link:focus {
     background-color: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-list-block {
@@ -413,7 +430,7 @@ menu-link:focus {
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-list-item-image-container:hover .information-overlay-text {
+.portfolio-list-item-image-container:hover .information-overlay {
     transform: translate(0%);
 }
 
@@ -502,9 +519,8 @@ menu-link:focus {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
