@@ -590,7 +590,7 @@ menu-link:focus {
     padding-left: 16px;
     color: #fff;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
@@ -692,6 +692,7 @@ menu-link:focus {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
     background: #fcfcfc;
+    margin-bottom: 8px;
 }
 
 .modal-close-btn {
@@ -720,9 +721,7 @@ menu-link:focus {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-name {
-    line-height: 1.17;
-}
+
 
 /* =============== /Modal window styles =============== */
 
@@ -731,7 +730,11 @@ menu-link:focus {
 
 .review-form-field-wrapper {
     border-color: #4D5AE5;  
-    margin-bottom: 16px
+    margin-bottom: 8px;
+}
+
+.user-name {
+    line-height: 1.17;
 }
 
 .review-form-discription {
@@ -762,10 +765,10 @@ menu-link:focus {
 .review-form-field-label {
     display: block;
     font-size: 12px;
-    line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
+    line-height: 1.17;
 }
 
 .review-form-input-wrapper {
