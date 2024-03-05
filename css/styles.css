@@ -765,7 +765,6 @@ menu-link:focus {
 }
 
 .review-form-input:focus {
-    outline: transparent;
     border-color: #4D5AE5;
 }
 
