@@ -712,10 +712,18 @@ menu-link:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
-.modal-close-btn:hover, 
+.modal-close-btn:hover,
 .modal-close-btn:focus {
-    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
 }
+
+.modal-close-btn:hover>.modal-close-icon,
+.modal-close-btn:focus>.modal-close-icon {
+    fill: #FFFFFF;
+}
+
+
 
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
