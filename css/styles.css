@@ -760,11 +760,14 @@ menu-link:focus {
     background-color: transparent;
     padding-left: 38px;
     transition: borde-color 250ms linear;
+    outline: transparent;
+    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-input:focus {
     border: 1px solid #4d5ae5;
     outline: transparent;
+    border-color: #4D5AE5;
 }
 
 .review-form-field-label {
