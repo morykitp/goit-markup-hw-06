@@ -898,10 +898,10 @@ menu-link:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.review-submit-btn:hover,
-.review-submit-btn:focus {
-    fill: #ffffff;
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+    background-color: #404bbf;
+    color: #fff;
 }
 
 
