@@ -853,22 +853,20 @@ menu-link:focus {
 }
 
 
-.review-form-privacy-checkbox:checked +
-.review-form-checkbox-label 
-.review-form-privacy-checkbox {
+.review-form-privacy-checkbox:checked+.review-form-checkbox-label 
+.review-form-own-checkbox {
     background:#404bbf;
     fill: #F4F4FD;
     border: none;
 }
 
-
-
-
-.review-form-privacy-checkbox:focus +
-.review-form-checkbox-label 
-.review-form-privacy-checkbox {
+.review-form-privacy-checkbox:focus+.review-form-checkbox-label 
+.review-form-own-checkbox {
     outline: 1px solid #4d5ae5;
 }
+
+
+
 
      
 
