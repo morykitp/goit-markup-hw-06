@@ -802,6 +802,9 @@ menu-link:focus {
     margin-bottom: 8px;
 }
 
+.review-form-field-wrapper:focus {
+    border-color: #4D5AE5;
+}
 
 .review-form-message {
     font-size: 12px;
@@ -851,7 +854,7 @@ menu-link:focus {
 
 
 .review-form-own-checkbox:checked +
-.review-form-checkbox-label +
+.review-form-checkbox-label 
 .review-form-own-checkbox {
     background:#404bbf;
     fill: #F4F4FD;
@@ -860,7 +863,7 @@ menu-link:focus {
 
 
 .review-form-own-checkbox:focus +
-.review-form-checkbox-label +
+.review-form-checkbox-label 
 .review-form-own-checkbox {
     outline: 1px solid #4d5ae5;
 }
