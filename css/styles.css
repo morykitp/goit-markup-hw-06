@@ -853,7 +853,7 @@ menu-link:focus {
 .review-form-own-checkbox:checked +
 .review-form-checkbox-label
 .review-form-own-checkbox {
-    background-color:#404bbf;
+    background:#404bbf;
     fill: #F4F4FD;
     border: none;
 }
