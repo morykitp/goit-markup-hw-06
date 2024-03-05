@@ -850,7 +850,7 @@ menu-link:focus {
 }
 
 
-.review-form-own-checkbox:checked 
+.review-form-own-checkbox:checked +
 .review-form-checkbox-label
 .review-form-own-checkbox {
     background-color:#404bbf;
@@ -859,7 +859,7 @@ menu-link:focus {
 }
 
 
-.review-form-own-checkbox:focus 
+.review-form-own-checkbox:focus +
 .review-form-checkbox-label
 .review-form-own-checkbox {
     outline: 1px solid #4d5ae5;
