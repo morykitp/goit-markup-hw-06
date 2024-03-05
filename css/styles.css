@@ -853,18 +853,20 @@ menu-link:focus {
 }
 
 
-.review-form-own-checkbox:checked +
+.review-form-privacy-checkbox:checked +
 .review-form-checkbox-label 
-.review-form-own-checkbox {
+.review-form-privacy-checkbox {
     background:#404bbf;
     fill: #F4F4FD;
     border: none;
 }
 
 
-.review-form-own-checkbox:focus +
+
+
+.review-form-privacy-checkbox:focus +
 .review-form-checkbox-label 
-.review-form-own-checkbox {
+.review-form-privacy-checkbox {
     outline: 1px solid #4d5ae5;
 }
 
@@ -897,6 +899,7 @@ menu-link:focus {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
