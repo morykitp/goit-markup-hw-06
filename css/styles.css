@@ -39,6 +39,7 @@ body {
 
 /* =============== /Common styles =============== */
 
+
 /* =============== Page header styles =============== */
 
 .page-header {
@@ -48,43 +49,15 @@ body {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .page-nav {
     display: flex;
     align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu {
-    display: flex;
-    gap: 40px;
-}
-
-.menu>:last-child {
-    margin-right: 0;
-}
-
-.menu-item {
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-menu {
-    display: flex;
-    gap: 40px;
-}
-
-.contact-menu>:last-child {
-    margin-right: 0
-} 
-
-.contact-info {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-heder-container {
-    display: flex;
-    justify-content: space-between;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -104,6 +77,15 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2e2f42;
 }
 
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -115,9 +97,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-menu-link:hover,
-menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #404bbf;
+}
+
+.menu>:last-child {
+    margin-right: 0;
 }
 
 .current {
@@ -136,14 +122,21 @@ menu-link:focus {
     bottom: -1px;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: #404bbf;
-}
-
 .contact-info {
     font-style: normal;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contact-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-menu>:last-child {
+    margin-right: 0;
+} 
 
 .contact-elements-link {
     font-size: 16px;
@@ -157,17 +150,10 @@ menu-link:focus {
     color: #404bbf;
 }
 
-.content-elements-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 /* =============== /Page header styles =============== */
 
 
 /* =============== Hero section styles =============== */
-
-
 
 .hero {
     background-size: cover;
@@ -175,9 +161,8 @@ menu-link:focus {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7), 
-        rgba(46, 47, 66, 0.7)
-        ), url(../images/hero/people-office.jpg);
+rgba(46, 47, 66, 0.7), 
+rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     background-color: #2e2f42;
     background-repeat: no-repeat;
     background-position: center;
@@ -213,10 +198,7 @@ menu-link:focus {
     letter-spacing: 0.04em;
     border: none;
     color: #fff;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
+    padding: 16px 32px;
     border-radius: 4px;
     background-color: #4D5AE5;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -234,43 +216,6 @@ menu-link:focus {
 
 /* =============== Benefits section styles =============== */
 
-.benefits-container-list {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    gap: 24px;
-}
-
-.benefits-item-logo {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: auto;
-    padding-right: auto;
-    background-color: #f4f4fd;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    fill: none;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-}
-
-.benefits-container-list {
-    display: flex;
-    gap: 24px;
-}
-
-.benefits-item-name {
-    margin-bottom: 8px;
-}
-
-.benefits-item {
-    width: calc((100% - 72px)/4);
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -282,7 +227,31 @@ menu-link:focus {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
 
+.benefits-container-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 24px;
+}
+
+.benefits-item {
+    width: calc((100% - 72px)/4);
+}
+
+.benefits-item-logo {
+    display: flex;
+    padding: 24px auto;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    fill: none;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 }
 
 .benefits-item-name {
@@ -291,6 +260,7 @@ menu-link:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .benefits-item-text {
@@ -301,6 +271,7 @@ menu-link:focus {
 }
 
 /* =============== /Benefits section styles =============== */
+
 
 /* =============== Team section styles =============== */
 
@@ -563,6 +534,10 @@ menu-link:focus {
     max-width: 264px;
 }
 
+.footer-subscribe-form {
+    margin-right: 24px;
+}
+
 
 .footer-subscribe-form-title {
     font-weight: 500;
@@ -614,9 +589,6 @@ menu-link:focus {
     color: #fff;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
     justify-content: center;
     align-items: center;
 
@@ -637,9 +609,6 @@ menu-link:focus {
     color: #fff;
 }
 
-.footer-subscribe-form {
-    margin-right: 24px;
-}
 
 .footer-icon-send {
     fill: #fff;
