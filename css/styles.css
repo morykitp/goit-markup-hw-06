@@ -275,6 +275,59 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
 
 /* =============== Team section styles =============== */
 
+.team-list {
+    background-color: #F4F4FD;
+}
+
+.team-list-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-list-block {
+    display: flex;
+    gap: 24px;
+}
+
+.team-list-item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((100% -72px)/ 4);
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-list-item-info {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+}
+
 .social-list {
     display: flex; 
     gap: 24px;
@@ -300,66 +353,12 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     background-color: #404bbf;
 }
 
-.team-list {
-    background-color: #F4F4FD;
-}
-
-.team-list-block {
-    display: flex;
-    gap: 24px;
-}
-
-.team-list-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .information-container {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.team-list-item {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    width: calc((100% -72px)/ 4);
-    background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.team-list-item-name {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-.team-list-item-info {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #434455;
-    margin-bottom: 8px;
-}
-
 /* =============== /Team section styles =============== */
-
 
 
 /* =============== Portfolio section styles =============== */
@@ -367,35 +366,6 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-
-.portfolio-list {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    row-gap: 48px;
-}
-
-.portfolio-info-container {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: auto;
-}
-
-.portfolio-list-item-image-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-list-item-image-container:hover .information-overlay-text {
-    transform: translate(0%);
-}
-
-.portfolio-list-item {
-    background: #fff;
-    width: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -409,6 +379,53 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     padding-left: auto;
     padding-right: auto;
     margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.portfolio-list-item {
+    background: #fff;
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.information-overlay-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-info-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: auto;
 }
 
 .portfolio-list-item-name {
@@ -429,32 +446,18 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     margin-left: 16px;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.information-overlay-text {
-    position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-list-item-image-container:hover .information-overlay-text {
+    transform: translate(0%);
 }
 
 /* =============== /Portfolio section styles =============== */
 
 
 /* =============== Page footer styles =============== */
+
+.page-footer {
+    background-color: #2e2f42;
+}
 
 .page-footer-container {
     display: flex;
@@ -465,6 +468,50 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
 
 .page-footer-logo-container {
     margin-right: 120px;
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.footer-logo-extra-color {
+    color: #f4f4fd;
+}
+
+.footer-info {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 264px;
+}
+
+.footer-social-list-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.footer-social-logo-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
 }
 
 .footer-social-list-link {
@@ -485,59 +532,9 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     background-color: #31d0aa;
 }
 
-.footer-social-list-box {
-    display: flex;
-    flex-direction: column;
-    margin-right: 80px;
-}
-
-.footer-social-list {
-    display: flex;
-    gap: 16px;
-}
-
-
-.footer-social-logo-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-    margin-bottom: 16px;
-}
-
-.page-footer {
-    background-color: #2e2f42;
-}
-
-.logo-footer {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5; 
-    margin-bottom: 16px;
-    display: inline-block;
-}
-
-.footer-logo-extra-color {
-    color: #f4f4fd;
-}
-
-.footer-info {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-    max-width: 264px;
-}
-
 .footer-subscribe-form {
     margin-right: 24px;
 }
-
 
 .footer-subscribe-form-title {
     font-weight: 500;
@@ -549,8 +546,9 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     display: block;
 }
 
-.footer-subscribe-extra-wrapper  {
+.footer-subscribe-form-extra-wrapper {
     display: flex;
+    gap: 24px;
 }
 
 .footer-email-input {
@@ -574,8 +572,14 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     outline: transparent;
 }
 
+.footer-email-input::placeholder {
+    color: #fff;
+}
+
 .footer-email-subscribe-btn {
-    display:flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #4d5ae5;
     border-radius: 4px;
     padding: 8px 24px;
@@ -589,39 +593,22 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     color: #fff;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center;
-    align-items: center;
-
 }
 
-.footer-email-subscribe-btn:hover, 
+.footer-email-subscribe-btn:hover,
 .footer-email-subscribe-btn:focus {
-    background-color:#404bbf;
+    background-color: #404bbf;
 }
-
-
-.footer-subscribe-form-extra-wrapper {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-email-input::placeholder {
-    color: #fff;
-}
-
 
 .footer-icon-send {
     fill: #fff;
     margin-left: 16px;
 }
 
-
-
 /* =============== /Page footer styles =============== */
 
 
 /* =============== Backdrop styles =============== */
-
 
 .backdrop {
     position: fixed;
@@ -632,36 +619,34 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
-    position: none;
+    pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+/* .is-open {
     opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+    visibility:visible;
+    pointer-events:auto;
+} */
 
 /* =============== /Backdrop styles =============== */
 
 
 /* =============== Modal window styles =============== */
 
-
 .modal {
     width: 408px;
     min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
-    background: #fcfcfc;
     margin-bottom: 8px;
+    background-color: #fcfcfc;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -680,7 +665,7 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404bbf;
@@ -692,95 +677,15 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     fill: #FFFFFF;
 }
 
-
-
 .modal-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 /* =============== /Modal window styles =============== */
 
 
 /* =============== Review form styles =============== */
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-/* .is-open {
-    opacity: 1;
-    visibility:visible;
-    pointer-events:auto;
-} */
-
-/*==================/Backdrop styles=============*/
-/*==================Modal window styles===========*/
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
-    background-color: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 72px;
-    padding-bottom: 24px;
-    padding-right: 24px;
-    padding-left: 24px;
-
-
-}
-
-.modal-close-btn {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    padding: 0;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #E7E9FC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    background-color: #404bbf;
-    border: none;
-}
-
-.modal-close-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-btn:hover>.modal-close-icon,
-.modal-close-btn:focus>.modal-close-icon {
-    fill: #FFFFFF;
-}
-
-/*==================/Modal window styles===========*/
-
-/*==================/Review form styles===========*/
 .review-form-discription {
     font-weight: 500;
     font-size: 16px;
@@ -792,6 +697,10 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     margin-bottom: 16px;
 }
 
+.review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
 .review-form-field-label {
     display: block;
     font-size: 12px;
@@ -801,8 +710,8 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     margin-bottom: 4px;
 }
 
-.review-form-field-wrapper {
-    margin-bottom: 8px;
+.review-form-input-wrapper {
+    position: relative;
 }
 
 .review-form-input {
@@ -816,10 +725,6 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-area {
-    margin-bottom: 16px;
-}
-
 .review-form-input:focus {
     border-color: #4d5ae5;
     outline: transparent;
@@ -827,10 +732,6 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
 
 .review-form-input:focus+.review-form-field-icon {
     fill: #4d5ae5;
-}
-
-.review-form-input-wrapper {
-    position: relative;
 }
 
 .review-form-field-icon {
@@ -867,16 +768,23 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     outline: transparent;
 }
 
+.review-form-privacy-checkbox:checked+.review-form-checkbox-label .review-form-own-checkbox {
+    background-color: #404bbf;
+    fill: #ffff;
+    border-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.review-form-privacy-checkbox:focus+.review-form-checkbox-label .review-form-own-checkbox {
+    outline: 1px solid #404bbf;
+}
+
 .review-form-checkbox-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-}
-
-.privacy-policy-link {
-    color: #4d5ae5;
-    text-decoration: underline;
 }
 
 .review-form-own-checkbox {
@@ -890,24 +798,12 @@ rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
     cursor: pointer;
     fill: transparent;
     margin-right: 8px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-privacy-checkbox:checked+.review-form-checkbox-label .review-form-own-checkbox {
-    background-color: #404bbf;
-    fill: #ffff;
-    border-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-    ;
-}
-
-.review-form-checkbox-wrapper {
-    margin-bottom: 24px;
-}
-
-.review-form-privacy-checkbox:focus+.review-form-checkbox-label .review-form-own-checkbox {
-    outline: 1px solid #404bbf;
+.privacy-policy-link {
+    color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .review-form-submit-btn {
@@ -935,3 +831,5 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     background-color: #404bbf;
     color: #fff;
 }
+
+/*==================/Review form styles===========*/
