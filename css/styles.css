@@ -1180,10 +1180,10 @@ body {
     padding-left: 16px;
 }
 
-.mobile-menu.is-open {
+/* .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .mobile-menu-close-btn {
     position: absolute;
